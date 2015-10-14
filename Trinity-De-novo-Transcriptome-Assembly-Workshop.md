@@ -21,28 +21,26 @@ Data Content:
 
 This demo uses RNA-Seq data corresponding to Schizosaccharomyces pombe (fission yeast), involving paired-end 76 base strand-specific RNA-Seq reads corresponding  to four samples:  Sp_log (logarithmic growth), Sp_plat (plateau phase), Sp_hs (heat shock), and Sp_ds (diauxic shift). 
 
-There are ‘left.fq’ and ‘right.fq’ FASTQ formatted Illlumina read files for each of the four samples.  Also included is a ‘genome.fa’ file corresponding to a genome sequence, and annotations for reference genes (‘genes.bed’ or ‘genes.gff3’).   
+There are ‘left.fq’ and ‘right.fq’ FASTQ formatted Illlumina read files for each of the four samples.  All RNA-Seq data sets can be found in the **RNASEQ_data/** subdirectory.
 
-Note, although the genes, annotations, and reads represent genuine sequence data, they were artificially selected and organized for use in this tutorial, so as to provide varied levels of expression in a very small data set, which could be processed and analyzed within an approximately one hour time session and with minimal computing resources.
+Also included is a ‘genome.fa’ file corresponding to a genome sequence, and annotations for reference genes (‘genes.bed’ or ‘genes.gff3’). These resources can be found in the **GENOME_data/** subdirectory.  
+
+>Note, although the genes, annotations, and reads represent genuine sequence data, they were artificially selected and organized for use in this tutorial, so as to provide varied levels of expression in a very small data set, which could be processed and analyzed within an approximately one hour time session and with minimal computing resources.
 
 
-Automated and Interactive Execution of Activities 
+## Automated and Interactive Execution of Activities 
 
 To avoid having to cut/paste the numerous commands shown below into a unix terminal, the VM includes a script ‘runTrinityDemo.pl’ that enables you to run each of the steps interactively.  To begin, simply run:
 
-  %  ./runTrinityDemo.pl 
+      %  ./runTrinityDemo.pl 
 
 Note, by default and for convenience, the demo will show you the commands that are to be executed. This way, you don’t need to type them in yourself.
 
-The protocol followed is that described here:
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875132/
-
-
- 
-
+>The protocol followed is that described here: <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875132/>
 
 Below, we refer to $TRINITY_HOME/ as the directory where the Trinity software is installed.
-De novo assembly of reads using Trinity
+
+## De novo assembly of reads using Trinity
 
 To generate a reference assembly that we can later use for analyzing differential expression, first combine the read data sets for the different conditions together into a single target for Trinity assembly.  Combine the left reads and the right reads  of the paired ends separately like so:
 
