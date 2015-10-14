@@ -11,13 +11,13 @@ All required software and data are provided pre-installed on a VirtualBox image.
 
 After installing the VM, be sure to quickly update the contents of the rnaseq_workshop_data directory by:
 
-   %   cd RNASeq_Trinity_Tuxedo_Workshop
+        %   cd RNASeq_Trinity_Tuxedo_Workshop
 
-   %   git pull
+        %   git pull
 
 This way, you’ll have the latest content, including any recent bugfixes.
 
-Data Content:
+### Data Content:
 
 This demo uses RNA-Seq data corresponding to Schizosaccharomyces pombe (fission yeast), involving paired-end 76 base strand-specific RNA-Seq reads corresponding  to four samples:  Sp_log (logarithmic growth), Sp_plat (plateau phase), Sp_hs (heat shock), and Sp_ds (diauxic shift). 
 
@@ -28,7 +28,7 @@ Also included is a ‘genome.fa’ file corresponding to a genome sequence, and 
 >Note, although the genes, annotations, and reads represent genuine sequence data, they were artificially selected and organized for use in this tutorial, so as to provide varied levels of expression in a very small data set, which could be processed and analyzed within an approximately one hour time session and with minimal computing resources.
 
 
-## Automated and Interactive Execution of Activities 
+### Automated and Interactive Execution of Activities 
 
 To avoid having to cut/paste the numerous commands shown below into a unix terminal, the VM includes a script ‘runTrinityDemo.pl’ that enables you to run each of the steps interactively.  To begin, simply run:
 
