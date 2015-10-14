@@ -20,3 +20,16 @@ Now, in the main VirtualBox application window, you should see the 'Trinity2015'
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/VM_install/appliance_loaded.png" width=450 />
 
+
+## Start the VM
+
+To start the VM, simply double-click the VM button.  It should load up a recent version of Ubuntu Linux, and you should see a nice clean desktop:
+
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/VM_install/appliance_started.png" width=450 />
+
+To be ready to start the workshop, click the black '>_' icon on the left to open up a terminal window.  List the files via typing the 'ls' command in the terminal, and you should see the directory 'RNASEQ_Trinity_Tuxedo_Workshop/'.
+
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/VM_install/opened_terminal.png" width=450 />
+
+
+Now you can begin one of the workshops.  Have fun!! :)
