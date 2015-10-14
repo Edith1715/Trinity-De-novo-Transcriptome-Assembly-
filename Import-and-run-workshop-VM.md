@@ -33,3 +33,8 @@ To be ready to start the workshop, click the black '>_' icon on the left to open
 
 
 Now you can begin one of the workshops.  Have fun!! :)
+
+
+## Advanced operations on the VM
+
+In case you decide that you want to install additional software or make any changes to your installed version of the VM, the root password is 'ubuntu'.   Good luck!
