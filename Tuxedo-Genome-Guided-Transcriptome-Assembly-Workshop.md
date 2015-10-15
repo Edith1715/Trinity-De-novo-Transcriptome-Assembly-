@@ -379,7 +379,7 @@ Differential gene and transcript expression analysis of RNA-seq experiments with
 
 and the Tuxedo tool websites:
 
-* TopHat: http://tophat.cbcb.umd.edu/
+* TopHat: http://ccb.jhu.edu/software/tophat/index.shtml
 * Cufflinks: http://cole-trapnell-lab.github.io/cufflinks/
 * CummeRbund: http://compbio.mit.edu/cummeRbund/
 
