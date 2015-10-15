@@ -167,7 +167,7 @@ View the reconstructed transcripts and the tophat alignments in IGV
      % igv.sh -g `pwd`/GENOME_data/genome.fa \
      `pwd`/merged_asm/merged.gtf,`pwd`/GENOME_data/genes.bed,`pwd`/tophat.Sp_ds.dir/Sp_ds.bam,`pwd`/tophat.Sp_hs.dir/Sp_hs.bam,`pwd`/tophat.Sp_log.dir/Sp_log.bam,`pwd`/tophat.Sp_plat.dir/Sp_plat.bam
 
-(Note, you may need to resize the individual alignment patterns in the viewer by dragging the panel boundaries.  Afterwards, go to menu “Tracks” -> “Fit Data To Window” to re-space the contents of the viewer)
+>Note, you may need to resize the individual alignment patterns in the viewer by dragging the panel boundaries.  Afterwards, go to menu “Tracks” -> “Fit Data To Window” to re-space the contents of the viewer)
  
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/igv_view_cuffmerge.png" width=600 />
 
