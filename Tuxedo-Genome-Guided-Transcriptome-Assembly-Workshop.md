@@ -349,7 +349,9 @@ Now plot the expression values for the gene under each condition
 >Note, error bars are only turned off here because this data set is both simulated and hugely underpowered to have reasonable confidence levels
 
     > expressionBarplot(ex_gene, logMode=T, showErrorbars=F)
- 
+
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/cummeRbund_gene_expr_barplot.png" width=400 />
+
 
 ### Draw a heatmap showing the differentially expressed genes
 
@@ -361,6 +363,7 @@ Now draw the heatmap
 
      > csHeatmap(sig_genes, cluster='both')
 
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/cummeRbund_DE_genes_heatmap.png" width=400 >/
 
 ## Pursuing this further
 
