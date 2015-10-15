@@ -169,7 +169,7 @@ View the reconstructed transcripts and the tophat alignments in IGV
 
 (Note, you may need to resize the individual alignment patterns in the viewer by dragging the panel boundaries.  Afterwards, go to menu “Tracks” -> “Fit Data To Window” to re-space the contents of the viewer)
  
-<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/igv_view_cuffmerge.png" width=400 />
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/igv_view_cuffmerge.png" width=600 />
 
 
 
@@ -379,8 +379,8 @@ Differential gene and transcript expression analysis of RNA-seq experiments with
 
 and the Tuxedo tool websites:
 
-TopHat: http://tophat.cbcb.umd.edu/
-Cufflinks: http://cufflinks.cbcb.umd.edu/
-CummeRbund: http://compbio.mit.edu/cummeRbund/
+* TopHat: http://tophat.cbcb.umd.edu/
+* Cufflinks: http://cole-trapnell-lab.github.io/cufflinks/
+* CummeRbund: http://compbio.mit.edu/cummeRbund/
 
 
