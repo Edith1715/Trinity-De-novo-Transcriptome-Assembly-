@@ -47,11 +47,11 @@ and follows this general framework as illustrated in the above publication:
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/nprot.2012.016-F2.jpg" width=300 />
 
 
-Use Tophat and Cufflinks to align reads and assemble transcripts
+## Use Tophat and Cufflinks to align reads and assemble transcripts
 
 First, prepare the ‘genome.fa’ file for tophat alignment:
 
-% bowtie-build genome.fa genome
+    % bowtie2-build GENOME_data/genome.fa genome
 
 (a) Align reads and assemble transcripts for sample: Sp_ds:
 
