@@ -145,7 +145,7 @@ First, create a file that lists the names of the files containing the separately
 
      % echo cufflinks.Sp_plat.dir/Sp_plat.transcripts.gtf >> assemblies.txt
 
-Verify that this file now contains both filenames:
+Verify that this file now contains all gtf filenames to be included in the merge:
 
      % cat assemblies.txt 
 
