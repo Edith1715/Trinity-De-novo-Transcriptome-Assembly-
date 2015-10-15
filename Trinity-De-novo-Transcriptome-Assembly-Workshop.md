@@ -39,7 +39,7 @@ Note, by default and for convenience, the demo will show you the commands that a
 
 >The protocol followed is that described here: <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875132/>
 
-<img src="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875132/bin/nihms-537313-f0002.jpg" width=500 />
+<img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TrinityWorkshop/nihms-537313-f0002.jpg" width=500 />
 
 
 Below, we refer to ${TRINITY_HOME}/ as the directory where the Trinity software is installed, and '%' as the command prompt.
