@@ -232,12 +232,12 @@ Load the cummerbund library into the R session
 
 Import the cuffdiff results 
 
-     >cuff = readCufflinks('diff_out')
+     > cuff = readCufflinks('diff_out')
 
 ### Examine the distribution of expression values for the reconstructed transcripts
 
 
-     >csDensity(genes(cuff))
+     > csDensity(genes(cuff))
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/cummeRbund_expr_density.png" width=300 /> 
 
@@ -245,7 +245,7 @@ Expression values are typically log-normally distributed.  This is just a sanity
  
 ### Examine transcript expression values in a scatter plot
 
-     >csScatter(genes(cuff), 'Sp_log', 'Sp_plat')
+     > csScatter(genes(cuff), 'Sp_log', 'Sp_plat')
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TuxedoWorkshop/cummeRbund_scatter_pair.png" width=300 /> 
 
@@ -272,6 +272,7 @@ Retrieve the gene-level differential expression data
      > gene_diff_data = diffData(genes(cuff))
 
 How many ‘genes’ are there?
+
      > nrow(gene_diff_data)
 
 .
@@ -282,7 +283,7 @@ From the gene-level differential expression data, extract those that are labeled
 
 >note, normally just set criteria as “significant=’yes’”, but we’re adding an additional p_value filter just to capture some additional transcripts for demonstration purposes only.  This simulated data is overly sparse and actually suboptimal for this demonstration (in hindsight).
 
-     >sig_gene_data = subset(gene_diff_data,(significant=='yes' | p_value < 0.01))
+     > sig_gene_data = subset(gene_diff_data,(significant=='yes' | p_value < 0.01))
 
 
 How many genes are significantly DE according to these criteria?
