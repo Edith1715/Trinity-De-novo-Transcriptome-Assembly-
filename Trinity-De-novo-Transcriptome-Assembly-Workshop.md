@@ -39,16 +39,16 @@ Note, by default and for convenience, the demo will show you the commands that a
 
 >The protocol followed is that described here: <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3875132/>
 
-Below, we refer to $TRINITY_HOME/ as the directory where the Trinity software is installed.
+Below, we refer to ${TRINITY_HOME}/ as the directory where the Trinity software is installed, and '%' as the command prompt.
 
 ## De novo assembly of reads using Trinity
 
 To generate a reference assembly that we can later use for analyzing differential expression, we'll combine the read data sets for the different conditions together into a single target for Trinity assembly. We do this by providing Trinity with a list of all the left and right fastq files to the --left and --right parameters as comma-delimited like so:
 
-       %    Trinity --seqType fq --SS_lib_type RF  \
-                    --left RNASEQ_data/Sp_log.left.fq.gz,RNASEQ_data/Sp_hs.left.fq.gz,RNASEQ_data/Sp_ds.left.fq.gz,RNASEQ_data/Sp_plat.left.fq.gz \ 
-                    --right RNASEQ_data/Sp_log.right.fq.gz,RNASEQ_data/Sp_hs.right.fq.gz,RNASEQ_data/Sp_ds.right.fq.gz,RNASEQ_data/Sp_plat.right.fq.gz \
-                    --CPU 2 --max_memory 1G
+       %   ${TRINITY_HOME}/Trinity --seqType fq --SS_lib_type RF  \
+               --left RNASEQ_data/Sp_log.left.fq.gz,RNASEQ_data/Sp_hs.left.fq.gz,RNASEQ_data/Sp_ds.left.fq.gz,RNASEQ_data/Sp_plat.left.fq.gz \ 
+               --right RNASEQ_data/Sp_log.right.fq.gz,RNASEQ_data/Sp_hs.right.fq.gz,RNASEQ_data/Sp_ds.right.fq.gz,RNASEQ_data/Sp_plat.right.fq.gz \
+               --CPU 2 --max_memory 1G
 
 Running Trinity on this data set may take 10 to 15 minutes.  You’ll see it progress through the various stages, starting with Jellyfish to generate the k-mer catalog, then followed by Inchworm, Chrysalis, and finally Butterfly. Running a typical Trinity job requires ~1 hour and ~1G RAM per ~1 million PE reads. You'd normally run it on a high-memory machine and let it churn for hours or days.
 
