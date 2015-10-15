@@ -121,7 +121,7 @@ Now, you’re done with running Tuxedo on this sample.  You now need to repeat t
                -o tophat.Sp_plat.dir genome \
                RNASEQ_data/Sp_plat.left.fq.gz RNASEQ_data/Sp_plat.right.fq.gz
 
-     %  mv tophat.Sp_plat.dir/accepted_hits.bam tophat.Sp_plat.dir/Sp_plat.bam
+     % mv tophat.Sp_plat.dir/accepted_hits.bam tophat.Sp_plat.dir/Sp_plat.bam
 
      % samtools index tophat.Sp_plat.dir/Sp_plat.bam
 
