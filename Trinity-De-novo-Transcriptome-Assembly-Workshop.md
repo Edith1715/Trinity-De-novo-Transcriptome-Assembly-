@@ -129,7 +129,10 @@ Since we happen to have a reference genome and a set of reference transcript ann
 
 First, prepare the genomic region for alignment by GMAP like so:
 
-    % gmap_build -d genome -D . -k 13 genome.fa
+    % gmap_build -d genome -D . -k 13 GENOME_data/genome.fa
+
+
+
 
 Now, align the Trinity transcript contigs to the genome, outputting in SAM format, which will simplify viewing of the data in our genome browser.
 
@@ -139,7 +142,7 @@ Now, align the Trinity transcript contigs to the genome, outputting in SAM forma
 
 Convert to a coordinate-sorted BAM (binary sam) format like so:
 
-    % samtools view –Sb trinity_gmap.sam > trinity_gmap.bam
+    % samtools view -Sb trinity_gmap.sam > trinity_gmap.bam
 
 Coordinate-sort the bam file (needed by most tools - especially viewers - as input):
 
@@ -155,7 +158,7 @@ Next, align the combined read set against the genome so that we’ll be able to 
 
 Prep the genome for running tophat
 
-    % bowtie-build GENOME_data/genome.fa genome 
+    % bowtie2-build GENOME_data/genome.fa genome 
 
 Now run tophat:
 
@@ -169,7 +172,7 @@ Index the tophat bam file needed by the viewer:
 
 ### c. Visualize all the data together using IGV
 
-    % igv.sh -g `pwd`/genome.fa `pwd`/genes.bed,`pwd`/tophat_out/accepted_hits.bam,`pwd`/trinity_gmap.bam
+    % igv.sh -g `pwd`/GENOME_data/genome.fa `pwd`/GENOME_data/genes.bed,`pwd`/tophat_out/accepted_hits.bam,`pwd`/trinity_gmap.bam
 
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TrinityWorkshop/IGV_trinity_and_reads.png" width=450 />
