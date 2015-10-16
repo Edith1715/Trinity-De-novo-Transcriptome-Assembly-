@@ -335,12 +335,17 @@ The files '*.DE_results' contain the output from running EdgeR to identify diffe
 
 These data include the log fold change (logFC), log counts per million (logCPM), P- value from an exact test, and false discovery rate (FDR).
 
-The EdgeR analysis above generated both MA and Volcano plots based on these data. See file 'transcripts.counts.matrix.condA_vs_condB.edgeR.DE_results.MA_n_Volcano.pdf' as shown below:
+The EdgeR analysis above generated both MA and Volcano plots based on these data. Examine any of these 'edgeR/transcripts.counts.matrix.condA_vs_condB.edgeR.DE_results.MA_n_Volcano.pdf' pdf files like so:
+
+
+    % evince edgeR/Trinity_trans.counts.matrix.Sp_log_vs_Sp_plat.edgeR.DE_results.MA_n_Volcano.pdf
+
+>Note, on linux, 'evince' is a handy viewer. You might also use 'xpdf' to view pdf files.  On mac, try using the 'open' command from the command-line instead.
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TrinityWorkshop/MA_volcano_plot.png" width=450 />
 
 
-Exit the chart viewer to continue.
+>Exit the chart viewer to continue.
 
 How many differentially expressed transcripts do we identify if we require the FDR to be at most 0.05?   You could import the tab-delimited text file into your favorite spreadsheet program for analysis and answer questions such as this, or we could run some unix utilities and filters to query these data. For example, a unix’y way to answer this question might be:
 
@@ -378,24 +383,28 @@ Included among these files are:
 
 Note, the number of lines in this file includes the top line with column names, so there are actually 56 DE transcripts at this 4-fold and 1e-3 FDR threshold cutoff.
 
-Also included among these files is a heatmap ‘diffExpr.P1e-3_C2.matrix.heatmap.pdf’ as shown below, with transcripts clustered along the vertical axis and samples clustered along the horizontal axis.
+Also included among these files is a heatmap ‘diffExpr.P1e-3_C2.matrix.log2.centered.genes_vs_samples_heatmap.pdf’ as shown below, with transcripts clustered along the vertical axis and samples clustered along the horizontal axis.
+
+
+     % evince diffExpr.P1e-3_C2.matrix.log2.centered.genes_vs_samples_heatmap.pdf
+
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TrinityWorkshop/heatmap.png" width=450 />
 
 
-Exit the PDF viewer to continue.
+>Exit the PDF viewer to continue.
 
 ## Extract transcript clusters by expression profile by cutting the dendrogram
 
 Extract clusters of transcripts with similar expression profiles by cutting the transcript cluster dendrogram at a given percent of its height (ex. 60%), like so:
 
-    % $TRINITY_HOME/ Analysis/DifferentialExpression/define_clusters_by_cutting_tree.pl \
+    % $TRINITY_HOME/Analysis/DifferentialExpression/define_clusters_by_cutting_tree.pl \
            --Ptree 60 -R diffExpr.P1e-3_C2.matrix.RData
 
 This creates a directory containing the individual transcript clusters, including a pdf file that summarizes expression values for each cluster according to individual charts:
 
 See: 
-diffExpr.P1e-3_C2.matrix.RData.clusters_fixed_P_60/my_cluster_plots.pdf
+     % evince diffExpr.P1e-3_C2.matrix.RData.clusters_fixed_P_60/my_cluster_plots.pdf
 
 
 <img src="https://raw.githubusercontent.com/wiki/trinityrnaseq/RNASeq_Trinity_Tuxedo_Workshop/images/TrinityWorkshop/expression_clusters.png" width=450 />
