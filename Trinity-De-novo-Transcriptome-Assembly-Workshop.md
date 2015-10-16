@@ -49,7 +49,7 @@ Below, we refer to ${TRINITY_HOME}/ as the directory where the Trinity software 
 To generate a reference assembly that we can later use for analyzing differential expression, we'll combine the read data sets for the different conditions together into a single target for Trinity assembly. We do this by providing Trinity with a list of all the left and right fastq files to the --left and --right parameters as comma-delimited like so:
 
        %   ${TRINITY_HOME}/Trinity --seqType fq --SS_lib_type RF  \
-               --left RNASEQ_data/Sp_log.left.fq.gz,RNASEQ_data/Sp_hs.left.fq.gz,RNASEQ_data/Sp_ds.left.fq.gz,RNASEQ_data/Sp_plat.left.fq.gz \ 
+               --left RNASEQ_data/Sp_log.left.fq.gz,RNASEQ_data/Sp_hs.left.fq.gz,RNASEQ_data/Sp_ds.left.fq.gz,RNASEQ_data/Sp_plat.left.fq.gz \
                --right RNASEQ_data/Sp_log.right.fq.gz,RNASEQ_data/Sp_hs.right.fq.gz,RNASEQ_data/Sp_ds.right.fq.gz,RNASEQ_data/Sp_plat.right.fq.gz \
                --CPU 2 --max_memory 1G
 
@@ -354,6 +354,11 @@ Trinity facilitates analysis of these data, including scripts for extracting tra
 
 
 ## Extracting differentially expressed transcripts and generating heatmaps
+
+Now let's perform the following operations from within the edgeR/ directory.  Enter the edgeR/ dir like so:
+
+     % cd edgeR/
+
 
 Extract those differentially expressed (DE) transcripts that are at least 4-fold differentially expressed at a significance of <= 0.001 in any of the pairwise sample comparisons:
 
