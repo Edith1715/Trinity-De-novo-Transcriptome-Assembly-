@@ -403,7 +403,7 @@ Extract clusters of transcripts with similar expression profiles by cutting the 
 
 This creates a directory containing the individual transcript clusters, including a pdf file that summarizes expression values for each cluster according to individual charts:
 
-See: 
+
      % evince diffExpr.P1e-3_C2.matrix.RData.clusters_fixed_P_60/my_cluster_plots.pdf
 
 
