@@ -233,6 +233,8 @@ Quantify expression for **Sp_hs**:
           --output_prefix Sp_hs --est_method RSEM  --aln_method bowtie \
           --trinity_mode --prep_reference --output_dir Sp_hs.RSEM
 
+.
+          
     % head Sp_hs.RSEM/Sp_hs.isoforms.results
 
 Quantify expression for **Sp_log**:
@@ -243,7 +245,9 @@ Quantify expression for **Sp_log**:
           --output_prefix Sp_log --est_method RSEM  --aln_method bowtie \
           --trinity_mode --prep_reference --output_dir Sp_log.RSEM
 
-    % head Sp_log.RSEM/Sp_log.isoforms.results
+.
+
+     % head Sp_log.RSEM/Sp_log.isoforms.results
 
 Quantify expression for **Sp_plat**:
 
@@ -252,6 +256,8 @@ Quantify expression for **Sp_plat**:
           --transcripts trinity_out_dir/Trinity.fasta  \
           --output_prefix Sp_plat --est_method RSEM  --aln_method bowtie \
           --trinity_mode --prep_reference --output_dir Sp_plat.RSEM
+
+.
 
     % head Sp_plat.RSEM/Sp_plat.isoforms.results
 
