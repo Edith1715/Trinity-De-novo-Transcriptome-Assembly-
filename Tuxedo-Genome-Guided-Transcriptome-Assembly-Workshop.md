@@ -277,7 +277,7 @@ How many ‘genes’ are there?
 
 .
 
-     1284
+     1248
 
 From the gene-level differential expression data, extract those that are labeled as significantly different.
 
@@ -292,7 +292,7 @@ How many genes are significantly DE according to these criteria?
 
 .
      
-     43
+     40
 
 ### Examine the entries at the top of the unsorted data table:
 
