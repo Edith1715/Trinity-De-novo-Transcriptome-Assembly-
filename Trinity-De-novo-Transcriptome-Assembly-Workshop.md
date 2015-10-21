@@ -29,9 +29,11 @@ Also included is a 'genome.fa' file corresponding to a genome sequence, and anno
 >Note, although the genes, annotations, and reads represent genuine sequence data, they were artificially selected and organized for use in this tutorial, so as to provide varied levels of expression in a very small data set, which could be processed and analyzed within an approximately one hour time session and with minimal computing resources.
 
 
-### Automated and Interactive Execution of Activities 
+### Automated Interactive or Manual Execution of Activities - You Decide!
 
-To avoid having to cut/paste the numerous commands shown below into a unix terminal, the VM includes a script ‘runTrinityDemo.pl’ that enables you to run each of the steps interactively.  To begin, simply run:
+The commands to be executed are indicated below after a command prompt '%'.  You can type these commands into the terminal, or you can simply copy/paste these commands into the terminal to execute the operations.
+
+To avoid having to copy/paste the numerous commands shown below into a unix terminal, the VM includes a script ‘runTrinityDemo.pl’ that enables you to run each of the steps interactively.  To begin, simply run:
 
       %  ./runTrinityDemo.pl 
 
