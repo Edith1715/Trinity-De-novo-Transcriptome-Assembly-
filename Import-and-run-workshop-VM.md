@@ -1,6 +1,6 @@
 # Import and run the RNA-Seq Workshop VM
 
-Once you've installed [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and downloaded the RNA-Seq workshop VM [Trinity2015.ova](ftp://ftp.broadinstitute.org/pub/Trinity/RNASEQ_WORKSHOP/Trinity2015.ova), complete the following steps to import and run the VM.
+Once you've installed [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and downloaded the RNA-Seq workshop VM [Trinity2015.ova](https://data.broadinstitute.org/Trinity/RNASEQ_WORKSHOP/Trinity2015.ova), complete the following steps to import and run the VM.
 
 ## Import the VM Appliance
 
