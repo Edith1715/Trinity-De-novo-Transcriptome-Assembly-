@@ -17,3 +17,4 @@ The Trinity and Tuxedo workshops leverage the same input data, but are otherwise
 * [Trinity de novo transcriptome assembly workshop](Trinity-De-novo-Transcriptome-Assembly-Workshop)
 * [Tuxedo genome-guided transcriptome assembly workshop](Tuxedo-Genome-Guided-Transcriptome-Assembly-Workshop)
 
+
